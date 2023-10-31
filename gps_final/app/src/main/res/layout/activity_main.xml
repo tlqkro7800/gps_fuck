@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F3F5F6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="홈"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/sult_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="짱짱쎈돌멩이"
+        android:textSize="16dp"
+        android:textColor="#0065FF"
+        android:fontFamily="@font/sult_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="94dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="님의 하루를 GPS가 응원할게요!"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/sult_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/nickname"
+        android:layout_marginTop="94dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/graphite"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gps_banner_1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="226dp"/>
+
+    <ImageView
+        android:id="@+id/box1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/studytime_box"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="159dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_need"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="141dp"
+        android:layout_marginLeft="312dp"/>
+
+    <TextView
+        android:id="@+id/study_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="짱짱쎈돌멩이님의 공부시간은 12시간 입니다."
+        android:fontFamily="@font/sult_bold"
+        android:textColor="#7E8483"
+        app:layout_constraintTop_toTopOf="@id/box1"
+        app:layout_constraintBottom_toBottomOf="@id/box1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="141dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="339dp"
+        android:background="@drawable/buy_background"
+        android:backgroundTint="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS의 유용한 기능"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#0065FF"
+        android:fontFamily="@font/sult_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="355dp"
+        android:layout_marginLeft="60dp"/>
+
+    <ImageView
+        android:id="@+id/go_to_study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/go_to_study"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="394dp"
+        android:layout_marginLeft="60dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ispreparing_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="394dp"
+        android:layout_marginLeft="134dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ispreparing_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="394dp"
+        android:layout_marginLeft="210dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ispreparing_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="394dp"
+        android:layout_marginLeft="288dp"/>
+
+    <ImageView
+        android:id="@+id/home_btmbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_btmbar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/shop_btn"
+        android:layout_width="wrap_content"
+        android:background="00ff0000"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/home_btmbar"
+        app:layout_constraintRight_toRightOf="@id/home_btmbar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/setting_btn"
+        android:layout_width="wrap_content"
+        android:background="00ff0000"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="@id/home_btmbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="40dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

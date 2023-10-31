@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyActivity">
+
+
+    <TextView
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="16sp"
+        android:fontFamily="@font/sult_bold"
+        android:text="상점"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/java_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item_1"
+        app:layout_constraintRight_toLeftOf="@id/pental_graph_sharp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="72sp"/>
+
+    <TextView
+        android:id="@+id/java_pen_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="자바펜 1.0"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/java_pen"
+        app:layout_constraintLeft_toLeftOf="@id/java_pen"/>
+
+    <TextView
+        android:id="@+id/java_pen_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="수량 : 300개"
+        android:textColor="#B1B6B7"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/java_pen_text"
+        app:layout_constraintLeft_toLeftOf="@id/java_pen"/>
+
+    <TextView
+        android:id="@+id/java_pen_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="1,000P"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/java_pen_cnt"
+        app:layout_constraintLeft_toLeftOf="@id/java_pen"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zzim"
+        app:layout_constraintTop_toBottomOf="@id/java_pen_cnt"
+        app:layout_constraintRight_toRightOf="@id/java_pen"
+        app:layout_constraintBottom_toBottomOf="@id/java_pen_point"
+        />
+
+    <ImageView
+        android:id="@+id/pental_graph_sharp"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:src="@drawable/item_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/java_pen"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="72sp"
+        />
+
+    <TextView
+        android:id="@+id/pental_graph_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="펜텔 그래프 샤프"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/pental_graph_sharp"
+        app:layout_constraintLeft_toLeftOf="@id/pental_graph_sharp"/>
+
+    <TextView
+        android:id="@+id/pental_graph_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="수량 : 340개"
+        android:textColor="#B1B6B7"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/pental_graph_text"
+        app:layout_constraintLeft_toLeftOf="@id/pental_graph_sharp"/>
+
+    <TextView
+        android:id="@+id/pental_graph_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="2,000P"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/pental_graph_cnt"
+        app:layout_constraintLeft_toLeftOf="@id/pental_graph_sharp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zzim"
+        app:layout_constraintTop_toBottomOf="@id/pental_graph_cnt"
+        app:layout_constraintRight_toRightOf="@id/pental_graph_sharp"
+        app:layout_constraintBottom_toBottomOf="@id/pental_graph_point"
+        />
+
+    <ImageView
+        android:id="@+id/zet_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item_3"
+        app:layout_constraintRight_toLeftOf="@id/pental_graph_sharp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="340sp"/>
+
+    <TextView
+        android:id="@+id/zet_stream_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="제트스트림 0.38"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/zet_stream"
+        app:layout_constraintLeft_toLeftOf="@id/zet_stream"/>
+
+    <TextView
+        android:id="@+id/zet_stream_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="수량 : 120개"
+        android:textColor="#B1B6B7"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/zet_stream_text"
+        app:layout_constraintLeft_toLeftOf="@id/zet_stream"/>
+
+    <TextView
+        android:id="@+id/zet_stream_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="6,000P"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/zet_stream_cnt"
+        app:layout_constraintLeft_toLeftOf="@id/zet_stream"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zzim"
+        app:layout_constraintTop_toBottomOf="@id/zet_stream_cnt"
+        app:layout_constraintRight_toRightOf="@id/zet_stream"
+        app:layout_constraintBottom_toBottomOf="@id/zet_stream_point"
+        />
+
+
+    <ImageView
+        android:id="@+id/monami_pen_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item_4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/java_pen"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="340sp"
+        />
+
+    <TextView
+        android:id="@+id/monami_pen_black_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="모나미 153볼펜"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/monami_pen_black"
+        app:layout_constraintLeft_toLeftOf="@id/monami_pen_black"/>
+
+    <TextView
+        android:id="@+id/monami_pen_black_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="수량 : 140개"
+        android:textColor="#B1B6B7"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="536dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/monami_pen_black_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="3,000P"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/monami_pen_black_cnt"
+        app:layout_constraintLeft_toLeftOf="@id/monami_pen_black"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zzim"
+        app:layout_constraintTop_toBottomOf="@id/monami_pen_black_point"
+        app:layout_constraintRight_toRightOf="@id/monami_pen_black"
+        app:layout_constraintBottom_toBottomOf="@id/monami_pen_black_point"
+        />
+
+    <ImageView
+        android:id="@+id/btm_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottom_bar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:background="00ff0000"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/btm_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:id="@+id/entire_button"
+        android:layout_width="wrap_content"
+        android:background="00ff0000"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="@id/btm_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="40dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1D1F1F"
+        android:alpha="0.65"/>
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/buy_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="상품을 구매하시겠습니까?"
+        android:fontFamily="@font/sult_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="295dp"
+        android:layout_marginLeft="85dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="#909696"
+        android:text="상품을 구매하시면 복구할 수 없어요"
+        android:fontFamily="@font/sult_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="325dp"
+        android:layout_marginLeft="85dp"/>
+
+    <View
+        android:id="@+id/refuse_btn"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:background="@drawable/buy_btn_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="397dp"
+        android:layout_marginLeft="80dp"/>
+
+    <View
+        android:id="@+id/enter_btn"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/buy_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="397dp"
+        android:layout_marginRight="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:textColor="#7E8483"
+        app:layout_constraintTop_toTopOf="@id/refuse_btn"
+        app:layout_constraintBottom_toBottomOf="@id/refuse_btn"
+        app:layout_constraintLeft_toLeftOf="@id/refuse_btn"
+        app:layout_constraintRight_toRightOf="@id/refuse_btn"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구매하기"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/enter_btn"
+        app:layout_constraintBottom_toBottomOf="@id/enter_btn"
+        app:layout_constraintLeft_toLeftOf="@id/enter_btn"
+        app:layout_constraintRight_toRightOf="@id/enter_btn"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

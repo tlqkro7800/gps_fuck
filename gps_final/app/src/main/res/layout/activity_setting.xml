@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="16sp"
+        android:fontFamily="@font/sult_bold"
+        android:text="전체"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/profile_background"
+        android:backgroundTint="#EAEFF2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="68dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:textSize="26dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sult_semibold"
+        app:layout_constraintTop_toTopOf="@id/profile"
+        app:layout_constraintLeft_toRightOf="@id/profile"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="짱짱쎈돌멩이님"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sult_bold"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@id/profile"
+        app:layout_constraintLeft_toRightOf="@id/profile"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기능"
+        android:textColor="#909696"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="179dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스터디캠"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sult_semibold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="208dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고객 센터"
+        android:textColor="#909696"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공지사항"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sult_semibold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="279dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자주 묻는 질문"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sult_semibold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="311dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:1 문의하기"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sult_semibold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="343dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/btm_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/entire_bottom_bar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:background="00ff0000"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/btm_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:id="@+id/purchase_Button"
+        android:layout_width="wrap_content"
+        android:background="00ff0000"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@id/btm_bar"
+        app:layout_constraintLeft_toLeftOf="@id/btm_bar"
+        app:layout_constraintRight_toRightOf="@id/btm_bar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fuck">
+
+
+    <TextView
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="16sp"
+        android:fontFamily="@font/sult_bold"
+        android:text="상점"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/java_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item_1"
+        app:layout_constraintRight_toLeftOf="@id/pental_graph_sharp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="72sp"/>
+
+    <TextView
+        android:id="@+id/java_pen_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="자바펜 1.0"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/java_pen"
+        app:layout_constraintLeft_toLeftOf="@id/java_pen"/>
+
+    <TextView
+        android:id="@+id/java_pen_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="수량 : 300개"
+        android:textColor="#B1B6B7"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/java_pen_text"
+        app:layout_constraintLeft_toLeftOf="@id/java_pen"/>
+
+    <TextView
+        android:id="@+id/java_pen_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="1,000P"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/java_pen_cnt"
+        app:layout_constraintLeft_toLeftOf="@id/java_pen"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zzim"
+        app:layout_constraintTop_toBottomOf="@id/java_pen_cnt"
+        app:layout_constraintRight_toRightOf="@id/java_pen"
+        app:layout_constraintBottom_toBottomOf="@id/java_pen_point"
+        />
+
+    <ImageView
+        android:id="@+id/pental_graph_sharp"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:src="@drawable/item_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/java_pen"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="72sp"
+        />
+
+    <TextView
+        android:id="@+id/pental_graph_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="펜텔 그래프 샤프"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/pental_graph_sharp"
+        app:layout_constraintLeft_toLeftOf="@id/pental_graph_sharp"/>
+
+    <TextView
+        android:id="@+id/pental_graph_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="수량 : 340개"
+        android:textColor="#B1B6B7"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/pental_graph_text"
+        app:layout_constraintLeft_toLeftOf="@id/pental_graph_sharp"/>
+
+    <TextView
+        android:id="@+id/pental_graph_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="2,000P"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/pental_graph_cnt"
+        app:layout_constraintLeft_toLeftOf="@id/pental_graph_sharp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zzim"
+        app:layout_constraintTop_toBottomOf="@id/pental_graph_cnt"
+        app:layout_constraintRight_toRightOf="@id/pental_graph_sharp"
+        app:layout_constraintBottom_toBottomOf="@id/pental_graph_point"
+        />
+
+    <ImageView
+        android:id="@+id/zet_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item_3"
+        app:layout_constraintRight_toLeftOf="@id/pental_graph_sharp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="340sp"/>
+
+    <TextView
+        android:id="@+id/zet_stream_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="제트스트림 0.38"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/zet_stream"
+        app:layout_constraintLeft_toLeftOf="@id/zet_stream"/>
+
+    <TextView
+        android:id="@+id/zet_stream_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="수량 : 120개"
+        android:textColor="#B1B6B7"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/zet_stream_text"
+        app:layout_constraintLeft_toLeftOf="@id/zet_stream"/>
+
+    <TextView
+        android:id="@+id/zet_stream_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="6,000P"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/zet_stream_cnt"
+        app:layout_constraintLeft_toLeftOf="@id/zet_stream"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zzim"
+        app:layout_constraintTop_toBottomOf="@id/zet_stream_cnt"
+        app:layout_constraintRight_toRightOf="@id/zet_stream"
+        app:layout_constraintBottom_toBottomOf="@id/zet_stream_point"
+        />
+
+
+    <ImageView
+        android:id="@+id/monami_pen_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item_4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/java_pen"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="340sp"
+        />
+
+
+    <TextView
+        android:id="@+id/monami_pen_black_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="모나미 153볼펜"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/monami_pen_black"
+        app:layout_constraintLeft_toLeftOf="@id/monami_pen_black"/>
+
+    <TextView
+        android:id="@+id/monami_pen_black_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="수량 : 140개"
+        android:textColor="#B1B6B7"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="536dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/monami_pen_black_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sult_bold"
+        android:text="3,000P"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/monami_pen_black_cnt"
+        app:layout_constraintLeft_toLeftOf="@id/monami_pen_black"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zzim"
+        app:layout_constraintTop_toBottomOf="@id/monami_pen_black_point"
+        app:layout_constraintRight_toRightOf="@id/monami_pen_black"
+        app:layout_constraintBottom_toBottomOf="@id/monami_pen_black_point"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottom_bar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
